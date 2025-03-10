@@ -314,7 +314,7 @@ I'm guessing this holds up the best in Texas. I didn't look at other states with
 
 ## Visual by geographic location
 
-I also decided to graph these relationships geographically, using longitude and latitude. There are issues related to my calculation of the closest distances. I grouped by Denny’s addresses only (address.x), but the map includes both Denny’s and La Quinta locations. I also have the max.overlaps set to the default within geom_text_repel(). These two issues create problems related to my graphs not including all distances being represented. I included what would happen if these issues were fixed.
+Although the assignment didn't ask for it, I also decided to graph these relationships geographically. I used longitude and latitude from the previous assignment along with the relevant information in this one. There are issues related to my calculation of the closest distances. I grouped by Denny’s addresses only (address.x), but the map includes both Denny’s and La Quinta locations. I also have the max.overlaps set to the default within geom_text_repel(). These two issues create problems related to my graphs not including all distances being represented. I included what would happen if these issues were fixed.
 
 
 ![The plot has now become unreadable](Messy_plot.png)

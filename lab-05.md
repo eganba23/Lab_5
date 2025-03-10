@@ -3,6 +3,11 @@ Lab 05 - La Quinta is Spanish for next to Denny’s, Pt. 2
 Benjamin Egan
 02-12-25
 
+Here is the link to the assignment page:
+<https://datascience4psych.github.io/DataScience4Psych/lab05.html>. This
+includes the relevant information for the assignment alongside required
+questions I needed to answer.
+
 ### Exercise 1
 
 ``` r
@@ -149,7 +154,7 @@ dn_lq_tx_mindist %>%
    x = closest
   )) +
   theme_bw()+
-    geom_histogram(binwidth = 1,fill = "#6a4e93") +
+    geom_histogram(binwidth = 1,fill = "#6a4e93", alpha = .6, color = "black") +
   labs(
     x = "Distance to a La Quinta in km",
     y = NULL
@@ -242,7 +247,18 @@ Texas has a ton of low distances based on the datasets.
 ## Visual by geographic location
 
 I also decided to graph these relationships geographically, using
-longitude and latitude.
+longitude and latitude. There are issues related to my calculation of
+the closest distances. I grouped by Denny’s addresses only (address.x),
+but the map includes both Denny’s and La Quinta locations. I also have
+the max.overlaps set to the default within geom_text_repel(). These two
+issues create problems related to not all distances being represented.
+
+<figure>
+<img src="Messy_plot.png"
+alt="What would happen if I fixed these issues?" />
+<figcaption aria-hidden="true">What would happen if I fixed these
+issues?</figcaption>
+</figure>
 
 ### Alaska
 

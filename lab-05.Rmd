@@ -198,7 +198,6 @@ dn_lq_ak_mindist %>%
    y = closest
   )) +
   theme_bw()+
-  
     geom_col(fill = "#6a4e93") +
   labs(
     title = "Minimum distance from a Denny's to a La Quinta in Alaska",

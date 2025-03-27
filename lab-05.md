@@ -86,7 +86,6 @@ dn_lq_ak_mindist %>%
    y = closest
   )) +
   theme_bw()+
-  
     geom_col(fill = "#6a4e93") +
   labs(
     title = "Minimum distance from a Denny's to a La Quinta in Alaska",
@@ -246,19 +245,24 @@ Texas has a ton of low distances based on the datasets.
 
 ## Visual by geographic location
 
-I also decided to graph these relationships geographically, using
-longitude and latitude. There are issues related to my calculation of
-the closest distances. I grouped by Denny’s addresses only (address.x),
-but the map includes both Denny’s and La Quinta locations. I also have
-the max.overlaps set to the default within geom_text_repel(). These two
-issues create problems related to not all distances being represented.
+Although the assignment didn’t ask for it, I also decided to graph these
+relationships geographically. I used longitude and latitude from the
+previous assignment along with the relevant information in this one.
+There are issues related to my calculation of the closest distances. I
+grouped by Denny’s addresses only (address.x), but the map includes both
+Denny’s and La Quinta locations. I also have the max.overlaps set to the
+default within geom_text_repel(). These two issues create problems
+related to my graphs not including all distances being represented. I
+included what would happen if these issues were fixed.
 
 <figure>
-<img src="Messy_plot.png"
-alt="What would happen if I fixed these issues?" />
-<figcaption aria-hidden="true">What would happen if I fixed these
-issues?</figcaption>
+<img src="Messy_plot.png" alt="The plot has now become unreadable" />
+<figcaption aria-hidden="true">The plot has now become
+unreadable</figcaption>
 </figure>
+
+Based on this becoming unreadable, I have left the cleaner plots to
+represent my capabilities as a coder early on in my learning.
 
 ### Alaska
 

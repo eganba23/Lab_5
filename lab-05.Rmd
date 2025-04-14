@@ -7,6 +7,8 @@ output: github_document
 
 Here is the link to the assignment page: https://datascience4psych.github.io/DataScience4Psych/lab05.html. This includes the relevant information for the assignment alongside required questions I needed to answer.
 
+Here is the link to the assignment at the time it was created: https://web.archive.org/web/20250414135339/https://datascience4psych.github.io/DataScience4Psych/lab05.html#yaml-2
+
 ```{r load-packages, message = FALSE, warning = FALSE, echo = FALSE}
 library(ggrepel)
 library(tidyverse) 
